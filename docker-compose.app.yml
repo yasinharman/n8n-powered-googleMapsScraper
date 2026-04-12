@@ -1,0 +1,19 @@
+services:
+  webapp:
+    build: .
+    container_name: gmaps-scraper-web
+    restart: unless-stopped
+    environment:
+      - N8N_WEBHOOK_URL=${N8N_WEBHOOK_URL}
+      - N8N_WEBHOOK_SECRET=${N8N_WEBHOOK_SECRET}
+      - REQUEST_TIMEOUT_MS=${REQUEST_TIMEOUT_MS:-120000}
+      - MAX_MESSAGE_LENGTH=${MAX_MESSAGE_LENGTH:-500}
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks:
+      - n8n_network
+
+networks:
+  n8n_network:
+    external: true
+    name: n8n_default
