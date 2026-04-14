@@ -113,7 +113,7 @@ export default function MainContent({ maxMessageLength }: MainContentProps) {
       <div className="w-full rounded-2xl border border-gray-800 bg-gray-900 p-6 shadow-xl">
         {/* Header */}
         <div className="mb-6 text-center">
-          <h1 className="text-xl font-bold text-gray-100">
+          <h1 className="text-xl font-bold text-orange-500">
             Google Maps Veri Kazıyıcı
           </h1>
           <p className="mt-1 text-sm text-gray-400">
