@@ -109,7 +109,7 @@ export default function MainContent({ maxMessageLength }: MainContentProps) {
   }
 
   return (
-    <div className="mx-auto flex min-h-screen w-full max-w-xl flex-col items-center justify-center px-4 py-12">
+    <div className="mx-auto flex min-h-screen w-full max-w-3xl flex-col items-center justify-center px-4 py-12">
       <div className="w-full rounded-2xl border border-gray-800 bg-gray-900 p-6 shadow-xl">
         {/* Header */}
         <div className="mb-6 text-center">
